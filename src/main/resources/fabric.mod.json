@@ -1,26 +1,23 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "create-controllable-bridge",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Create Controllable Bridge",
+  "description": "A simple Fabric mod to bridge between Create and Controllable to enable gamepad controls for specific Create entities.",
   "authors": [
-    "Me!"
+    "petermeansrock"
   ],
   "contact": {
     "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
   },
   "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/create-controllable-bridge/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "com.petermeansrock.minecraft.create.controllable.CreateControllableBridgeMod"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
     "fabric-api": ">=${fabric_api_version}",

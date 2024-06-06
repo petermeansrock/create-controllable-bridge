@@ -1,4 +1,4 @@
-package com.example.modid;
+package com.petermeansrock.minecraft.create.controllable;
 
 import com.simibubi.create.Create;
 
@@ -10,9 +10,9 @@ import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ExampleMod implements ModInitializer {
-	public static final String ID = "modid";
-	public static final String NAME = "Example Mod";
+public class CreateControllableBridgeMod implements ModInitializer {
+	public static final String ID = "create-controllable-bridge";
+	public static final String NAME = "Create Controllable Bridge";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
 	@Override
