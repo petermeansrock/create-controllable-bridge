@@ -31,7 +31,7 @@ repositories {
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
 	maven { url = "https://jitpack.io/" } // Mixin Extras, Fabric ASM
 	maven { url = "https://maven.tterrag.com/" } // Flywheel
-	maven { url = "https://minecraft.curseforge.com/api/maven/" } // Controllable
+	maven { url = "https://www.cursemaven.com/" } // Controllable
 }
 
 configurations.configureEach {
@@ -77,7 +77,7 @@ dependencies {
 //    modCompileOnly("dev.emi:emi:${emi_version}")
 
 	// Controllable mod dependency
-	modImplementation("controllable:Controllable:${minecraft_version}:${controllable_version}")
+	modImplementation("curse.maven:controllable-${controllable_fabric_project_id}:${controllable_fabric_file_id}")
 }
 
 processResources {
