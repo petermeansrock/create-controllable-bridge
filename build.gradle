@@ -31,6 +31,7 @@ repositories {
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
 	maven { url = "https://jitpack.io/" } // Mixin Extras, Fabric ASM
 	maven { url = "https://maven.tterrag.com/" } // Flywheel
+	maven { url = "https://minecraft.curseforge.com/api/maven/" } // Controllable
 }
 
 configurations.configureEach {
@@ -74,6 +75,13 @@ dependencies {
 //    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}")
 //    modCompileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${rei_version}")
 //    modCompileOnly("dev.emi:emi:${emi_version}")
+
+	// Controllable mod dependency
+	modImplementation("controllable:Controllable:${minecraft_version}:${controllable_version}")
+}
+
+minecraft {
+	useDepAts = true
 }
 
 processResources {
